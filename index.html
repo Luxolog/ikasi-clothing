@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f6f4ef"><meta name="description" content="IKASI Clothing — township streetwear. Wear your story.">
+<title>IKASI Clothing — Township Streetwear</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announcement">IKASI CLOTHING · TOWNSHIP STREETWEAR · EST. 2016</div>
+<header class="site-header"><a class="wordmark" href="#">IKASI<span>®</span><small>CLOTHING</small></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+<nav class="main-nav" id="mainNav"><a href="#shop">Shop all</a><a href="#shop" data-filter-link="T-shirts">T-shirts</a><a href="#shop" data-filter-link="Hoodies">Hoodies</a><a href="#shop" data-filter-link="Sweaters">Sweaters</a><a href="#shop" data-filter-link="Accessories">Caps</a></nav>
+<div class="header-actions"><a class="search-link" href="#story">Our story ↘</a><button class="cart-button" id="openCart">Bag <span id="cartCount">0</span></button></div></header>
+<main>
+<section class="hero"><div class="hero-copy"><p class="eyebrow"><span class="dot"></span> TOWNSHIP STREETWEAR · EST. 2016</p><h1>Wear your<br><em>own story.</em></h1><p class="hero-intro">Bold statements. Everyday essentials. Rooted in the kasi, made to move with you. Meet IKASI Clothing.</p><a class="button button-dark" href="#shop">Shop the collection <span>↗</span></a><div class="hero-footnote"><span>THE IKASI COLLECTION</span><span>Local spirit. Personal style.</span></div></div>
+<div class="hero-image-wrap"><img class="hero-image" src="assets/hustle-hard-black.png" alt="IKASI Hustle Hard hoodie, front and back"><div class="hero-stamp"><strong>HUSTLE<br><em>HARD.</em></strong><span>TOWNSHIP STREETWEAR</span></div><span class="image-caption">IKASI CLOTHING — EST. 2016</span></div></section>
+<div class="ticker"><div>FEAR NOT <span>✳</span> HUSTLE HARD <span>✳</span> LION OF JUDAH <span>✳</span> WEAR YOUR STORY <span>✳</span></div></div>
+<section class="shop-section section-pad" id="shop"><div class="section-heading"><div><p class="eyebrow">THE IKASI COLLECTION</p><h2>Make a statement.<br><em>Keep it yours.</em></h2></div><p class="section-description">Explore signature designs from IKASI Clothing. Choose your colour and size, then add your favourite to the bag.</p></div>
+<div class="shop-toolbar"><div class="filter-list"><button class="filter active" data-filter="All">All pieces</button><button class="filter" data-filter="T-shirts">T-shirts</button><button class="filter" data-filter="Hoodies">Hoodies</button><button class="filter" data-filter="Sweaters">Sweaters</button><button class="filter" data-filter="Accessories">Caps</button></div><span class="result-count" id="resultCount">04 PRODUCTS</span></div><div class="product-grid" id="productGrid"></div></section>
+<section class="statement" id="story"><div class="statement-top"><span>THE IKASI POINT OF VIEW</span><span>EST. 2016</span></div><h2>Fear not.<br>Hustle hard.<br><em>Stand in your purpose.</em></h2><div class="statement-bottom"><p>IKASI Clothing celebrates township energy, bold self-expression and the drive to keep moving forward. Wear what you believe in.</p><a href="#shop" class="text-link">Find your fit <span>↗</span></a></div></section>
+<section class="newsletter section-pad"><div><p class="eyebrow">STAY IN THE LOOP</p><h2>Next drop.<br><em>Don't miss it.</em></h2></div><form id="newsletterForm" class="newsletter-form"><label for="newsletterEmail">Get updates on new designs and releases.</label><div class="email-field"><input id="newsletterEmail" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></div><p id="newsletterMessage" class="form-message">Newsletter sign-up will be connected before launch.</p></form></section>
+</main>
+<footer class="site-footer"><a class="wordmark" href="#">IKASI<span>®</span><small>CLOTHING</small></a><p>Wear your story. © <span id="year"></span> IKASI Clothing.</p><div><a href="#shop">Shop</a><a href="#story">Our story</a><a href="mailto:hello@ikasiclothing.co.za">Contact</a></div></footer>
+<div class="cart-overlay" id="cartOverlay" hidden><button class="overlay-scrim" id="closeCart" aria-label="Close bag"></button><aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cartTitle">Shopping bag <span id="drawerCount">(0)</span></h2></div><button id="closeCartTop" class="close-button" aria-label="Close bag">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-empty" id="cartEmpty"><span>✳</span><h3>Your bag is waiting.</h3><p>Find something that feels like you.</p><button class="button button-dark" id="continueShopping">Explore pieces</button></div><div class="cart-foot" id="cartFoot" hidden><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">R0.00</strong></div><p>Shipping is confirmed when your order is placed.</p><button class="button button-dark checkout-button" id="checkoutButton">Continue to order <span>↗</span></button><small>Checkout and online payments are not connected yet.</small></div></aside></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div><script src="app.js"></script>
+</body></html>
